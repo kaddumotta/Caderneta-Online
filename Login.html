@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Contato</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    
+    body {
+        background: #4a5f6a ;
+        
+    }
+
+    form {
+        background-color: #2F3644;
+        max-width: 500px;
+        width: 70%;
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        border: 2px solid #3E445B;
+    }
+
+    form h1 {
+        font-size: 30px;
+        text-align: center;
+        color: #ACBAE1;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    form a {
+        text-decoration: none;
+        font-size: 13px;
+        text-align: center;
+        color: #ACBAE1;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    form a:hover {
+        text-decoration: none;
+        font-size: 13px;
+        text-align: center;
+        color: #ccc;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+
+    form input[type=text],
+    form input[type=password]{
+        width: 100%;
+        height: 45px;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        margin: 10px 0;
+    }
+
+    form input[type=submit]{
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+        background: #6C63FF;
+        color: #fff;
+        border: 0;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    form input[type=submit]:hover {
+        background-color: #584ff5;
+
+    }
+
+    form input[type=text]:focus{
+        outline: 0;
+    }
+
+    form input[type=password]:focus{
+        outline: 0;
+    }
+
+    form h3 {
+        font-size: 8px;
+        text-align: center;
+        color: #ACBAE1;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 10px;
+    }
+
+    form h4 {
+        font-size: 15px;
+        text-align: center;
+        color: #ACBAE1;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 10px;
+        line-height: 1.4;
+        
+    }
+
+    form h5 {
+        font-size: 20px;
+        text-align: center;
+        color: #ACBAE1;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    
+    div {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px
+        ;
+    }
+    
+    img{
+
+        width: 50px;
+    }
+
+
+    .entrar {
+         font-size: 15px;
+         font-weight: 600;
+         padding: 15px;
+    }
+    
+
+</style>
+
+
+<body>
+    <form>
+        <h1>Login</h3>
+        <input id="email" type="text" name="e-mail" placeholder= " &#x1F4E7            Seu e-mail...">
+        <input type="password" name="Senha" placeholder=" &#x1F512             Sua senha">
+        <input class="entrar" type="submit" name="acao" value="ENTRAR">
+
+      <h3><a href="" target="_blank">Esqueceu sua Senha?</a></h3>
+      <h3><a href="Cadastro.html" target="_blank">Faça seu Cadastro</a></h3>    
+
+      <h4>ou</h4>
+
+
+       <h5>Faça login utilizando as redes sociais</h5> 
+
+       <div>
+             
+       <a href="https://www.facebook.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9IHXL4PiwOtqBMmIPd32PowYEETMSk7ltapBFwxbZ0pkLlkyygmGJSGU3OJSlpzN5FD0&usqp=CAU" alt=""></a>
+       <a href="https://www.instagram.com/" target="_blank"><img src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon-1.png" alt=""></a>
+        </div>
+
+
+
+    </form>
+
+
+
+    <script>
+
+        alert("Seja bem Vindo(a)")
+    
+
+        var email = document.getElementById('email');
+
+        email.addEventListener('focus',()=>{
+            email.style.borderColor = "#4a5f6a"
+        });
+
+        email.addEventListener('blur',()=>{
+            email.style.borderColor = "#ccc"
+        });
+
+
+    </script>
+    
+</body>
+</html>
