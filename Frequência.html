@@ -74,7 +74,23 @@
         outline: 0;
     }
 
+    .select{
+      margin-top: 10px;
+      margin-bottom: 0px;
+      width: 150px;
+      color: #2F3644;
+    }
 
+    p{
+      color: #2F3644;
+      font-weight: 500;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    table tbody {
+  overflow: auto;
+  height: 100px;
+}
 </style>
 
 <body>
@@ -107,9 +123,10 @@
     <div class="titulo"><h1>Lançar Frequência</h1></div>
 
     <div class="fundo-nota">
-      
-      <select name="Mês" id="">
-
+      <div class="select">
+       <p>Selecione o Mês:</p> 
+      <select class="form-select" multiple aria-label="multiple select example" name="Mês" id="">
+        
         <option value="Janeiro">Janeiro</option>
         <option value="fevereiro">Fevereiro</option>
         <option value="fevereiro">Março</option>
@@ -124,10 +141,11 @@
         <option value="fevereiro">Dezembro</option>
 
       </select>
-
+    </div>
         <div class="table-responsive">
     <table class="table table-hover">
     <tr>
+      
     <th>Número</th>
     <th>Aluno</th>
     <th>01</th>
@@ -163,6 +181,7 @@
 
 
     </tr>
+   
 <br>
 <tr>
     <th>01</th>
@@ -270,7 +289,7 @@
     <th><input type="checkbox" name="frequencia" id="frequencia"></th>
     <th><input type="checkbox" name="frequencia" id="frequencia"></th>
     </tr>
-
+  
     </table>
     <br><br>
 
