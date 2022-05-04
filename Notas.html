@@ -141,7 +141,7 @@
 <br>
 <tr>
     <th>01</th>
-    <th>Aline Vieira do Nascimento Motta</th>
+    <th>Aluno 1</th>
     <th><input id="n1_1" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
     <th><input id="n2_1" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
     <th><input id="n3_1" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
@@ -154,24 +154,27 @@
 
 <tr>
     <th>02</th>
-    <th>Carlos Eduardo Benedito Motta</th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-   
-    </tr>
+    <th>Aluno 2</th>
+    <th><input id="n1_2" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n2_2" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n3_2" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n4_2" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="f2" min="0" type="number" style="width: 50px" value="0"Po></input></th>
+    <th id="m2"></th>
+    <th id="r2"></th>
+        </tr>
     <br>
 <tr>
     <th>03</th>
-    <th>Thaís Vieira do Nascimento</th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    </tr>
+    <th>Aluno 3</th>
+    <th><input id="n1_3" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n2_3" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n3_3" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n4_3" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="f3" min="0" type="number" style="width: 50px" value="0"Po></input></th>
+    <th id="m3"></th>
+    <th id="r3"></th>
+        </tr>
 
     </table>
     <br><br>
@@ -185,37 +188,42 @@
 
 <script>
   function atualiza(){
-calcula('n1_1', 'n2_1', 'n3_1', 'n4_1', 'f1' m1, r1); 
-
-}
+    calcula('n1_1', 'n2_1', 'n3_1', 'n4_1', 'f1', 'm1', 'r1'); 
+    calcula('n1_2', 'n2_2', 'n3_2', 'n4_2', 'f2', 'm2', 'r2');
+    calcula('n1_3', 'n2_3', 'n3_3', 'n4_3', 'f3', 'm3', 'r3');
+  }
 
 function calcula(n1, n2, n3, n4, fa, me, re){
-let nota1 = document.getElementById(n1);
-let nota2 = document.getElementById(n2);
-let nota3 = document.getElementById(n3);
-let nota4 = document.getElementById(n4);
-let faltas_1 = document.getElementById(fa);
+  let nota1 = parseFloat(document.getElementById(n1).value);
+  let nota2 = parseFloat(document.getElementById(n2).value);
+  let nota3 = parseFloat(document.getElementById(n3).value);
+  let nota4 = parseFloat(document.getElementById(n4).value);
+  let faltas_1 = parseFloat(document.getElementById(fa).value);
 
-let media = (parseFloat(nota1.value) + parseFloat(nota2.value) + (parseFloat(nota3.value) + (parseFloat(nota4.value)) /4;
-let faltas = parseInt(faltas_1.value);
+  let media = (nota1 + nota2 + nota3 + nota4)/4;
+  let faltas = parseInt(faltas_1);
 
-if(isNaN(media) || isNaN(faltas)){
-  if(isNaN(media)){
-      media = 0;
-  }else if(isNaN(faltas)){
+  if(isNaN(media) || isNaN(faltas)){
+    if(isNaN(media)){
+       media = 0;
+    }else if(isNaN(faltas)){
       falta = 0
+    }
   }
-}
 
-if(media < 5 || faltas > 5){
-  var result = "Reprovado"; 
-}else{
-  var result = "Aprovado";
-}
+  if(media < 7 || faltas > 12){
+    var result = "Reprovado"; 
+  }else{
+    var result = "Aprovado";
+  }
 
-me.innerHTML = `${media}`; 
-re.innerHTML = `${result}`; 
-}
+  m1.innerHTML = `${media}`; 
+  r1.innerHTML = `${result}`; 
+  m2.innerHTML = `${media}`; 
+  r2.innerHTML = `${result}`;
+  m3.innerHTML = `${media}`; 
+  r3.innerHTML = `${result}`;
+} 
   
 </script>
 
