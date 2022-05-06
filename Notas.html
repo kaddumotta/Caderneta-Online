@@ -152,6 +152,45 @@
         </tr>
     <br>
 
+    <th>02</th>
+    <th>Aluno 2</th>
+    <th><input id="n1_2" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n2_2" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n3_2" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n4_2" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="f2" min="0" type="number" style="width: 50px" value="0"Po></input></th>
+    <th id="m2"></th>
+    <th id="r2"></th>
+        </tr>
+
+        <br>
+
+        <th>03</th>
+    <th>Aluno 3</th>
+    <th><input id="n1_3" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n2_3" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n3_3" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n4_3" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="f3" min="0" type="number" style="width: 50px" value="0"Po></input></th>
+    <th id="m3"></th>
+    <th id="r3"></th>
+        </tr>
+
+        <br>
+
+        <th>04</th>
+    <th>Aluno 4</th>
+    <th><input id="n1_4" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n2_4" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n3_4" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="n4_4" min="0" max="10" type="number" style="width: 50px" value="0"></input></th>
+    <th><input id="f4" min="0" type="number" style="width: 50px" value="0"Po></input></th>
+    <th id="m4"></th>
+    <th id="r4"></th>
+        </tr>
+
+        <br>
+
 
 
     </table>
@@ -166,8 +205,10 @@
 
 <script>
   function atualiza(){
-    calcula('n1_1', 'n2_1', 'n3_1', 'n4_1', 'f1', 'm1', 'r1'); 
-    
+    calcula('n1_1', 'n2_1', 'n3_1', 'n4_1', 'f1', m1, r1); 
+    calcula('n1_2', 'n2_2', 'n3_2', 'n4_2', 'f2', m2, r2);
+    calcula('n1_3', 'n2_3', 'n3_3', 'n4_3', 'f3', m3, r3);
+    calcula('n1_4', 'n2_4', 'n3_4', 'n4_4', 'f4', m4, r4); 
   }
 
 function calcula(n1, n2, n3, n4, fa, me, re){
@@ -188,14 +229,14 @@ function calcula(n1, n2, n3, n4, fa, me, re){
     }
   }
 
-  if(media < 5 || faltas > 5){
+  if(media < 7 || faltas > 12){
     var result = "Reprovado"; 
   }else{
     var result = "Aprovado";
   }
 
-  m1.innerHTML = `${media}`; 
-  r1.innerHTML = `${result}`; 
+  me.innerHTML = `${media}`; 
+  re.innerHTML = `${result}`; 
 
 } 
   
