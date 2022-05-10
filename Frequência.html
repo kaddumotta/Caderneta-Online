@@ -1,329 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-*{margin: 0;padding: 0;box-sizing: border-box;}
-    
-    body {
-        background: #4a5f6a ;
-        
-    }
+  body {
+    background: #4a5f6a;
 
-    form {
-        background-color: #2F3644;
-        max-width: 500px;
-        width: 70%;
-        padding: 20px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        border-radius: 10px;
-        border: 2px solid #3E445B;
-    }
+  }
 
-    .fundo-nota {
-        background-color: aliceblue;
-        margin: 10px;
-        padding: 5px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: center;
+  form {
+    background-color: #2F3644;
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 2px solid #3E445B;
+  }
 
-    }
+  .fundo-nota {
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 
-    .titulo{
-        color: #ACBAE1;
-        text-align: center;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        padding: 5px;
-        margin-top: 5px;
-    }
+  }
 
-    .enviar {
-         font-size: 15px;
-         font-weight: 600;
-         padding: 15px;
-    }
+  .titulo {
+    color: #ACBAE1;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    margin-top: 5px;
+  }
 
-    input[type=submit]{
-        width: 15%;
-        height: 50px;
-        cursor: pointer;
-        background: #6C63FF;
-        color: #fff;
-        border: 0;
-        border-radius: 20px;
-        transition: 1s;
-    }
+  .enviar {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px;
+  }
 
-    input[type=submit]:hover {
-        background-color: #584ff5;
+  input[type=submit] {
+    width: 15%;
+    height: 50px;
+    cursor: pointer;
+    background: #6C63FF;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+  }
 
-    }
+  input[type=submit]:hover {
+    background-color: #584ff5;
 
-    form input[type=text]:focus{
-        outline: 0;
-    }
+  }
 
-    .select{
-      margin-top: 10px;
-      margin-bottom: 0px;
-      width: 150px;
-      color: #2F3644;
-    }
+  form input[type=text]:focus {
+    outline: 0;
+  }
 
-    p{
-      color: #2F3644;
-      font-weight: 500;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+  .select {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 150px;
+    color: #2F3644;
+  }
 
-    table tbody {
-  overflow: auto;
-  height: 100px;
-}
+  p {
+    color: #2F3644;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
 
-.botao{
-        
-        width: 100%;
-        height: 40px;
-        cursor: pointer;
-        background: #6C63FF;
-        color: #fff;
-        border: 0;
-        border-radius: 20px;
-        transition: 1s;
-    }
+  table tbody {
+    overflow: auto;
+    height: 100px;
+  }
 
-    .botao:hover {
-        background-color: #584ff5;
+  .botao {
 
-    }
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: #6C63FF;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+  }
+
+  .botao:hover {
+    background-color: #584ff5;
+
+  }
+
+  img {
+    width: 60px;
+  }
+
+  .tabela {
+    text-align: center;
+    vertical-align: middle;
+
+  }
+
+  
 </style>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="Inicio.html">Início</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Notas.html">Lançar Nota</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Frequência.html">Lançar Frequencia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Sair</a>
-              </li>
-            </ul>
-            <span class="navbar-text">
-              Caderneta Online -  Bem Vindo!
-            </span>
-          </div>
-        </div>
-      </nav>      
 
-    <div class="titulo"><h1>Lançar Frequência</h1></div>
-
-    <div class="fundo-nota">
-      <div class="select">
-       <p>Selecione o Mês:</p> 
-      <select class="form-select" multiple aria-label="multiple select example" name="Mês" id="">
-        
-        <option value="Janeiro">Janeiro</option>
-        <option value="fevereiro">Fevereiro</option>
-        <option value="fevereiro">Março</option>
-        <option value="fevereiro">Abril</option>
-        <option value="fevereiro">Maio</option>
-        <option value="fevereiro">Junho</option>
-        <option value="fevereiro">Julho</option>
-        <option value="fevereiro">Agosto</option>
-        <option value="fevereiro">Setembro</option>
-        <option value="fevereiro">Outubro</option>
-        <option value="fevereiro">Novembro</option>
-        <option value="fevereiro">Dezembro</option>
-
-      </select>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Inicio.html">Início</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Notas.html">Lançar Nota</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Frequência.html">Lançar Frequencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Sair</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Caderneta Online - Bem Vindo!
+        </span>
+      </div>
     </div>
-        <div class="table-responsive">
-    <table class="table table-hover">
-    <tr>
-      
-    <th>Número</th>
-    <th>Aluno</th>
-    <th>01</th>
-    <th>02</th>
-    <th>03</th>
-    <th>04</th>
-    <th>05</th>
-    <th>06</th>
-    <th>07</th>
-    <th>08</th>
-    <th>09</th>
-    <th>10</th>
-    <th>11</th>
-    <th>12</th>
-    <th>13</th>
-    <th>14</th>
-    <th>15</th>
-    <th>16</th>
-    <th>17</th>
-    <th>18</th>
-    <th>19</th>
-    <th>20</th>
-    <th>21</th>
-    <th>22</th>
-    <th>23</th>
-    <th>24</th>
-    <th>25</th>
-    <th>26</th>
-    <th>27</th>
-    <th>28</th>
-    <th>29</th>
-    <th>30</th>
+  </nav>
+
+  <div class="titulo">
+    <h1>Lançar Frequência</h1>
+  </div>
+
+  <div class="fundo-nota">
+    <div class="select">
+      <p>Selecione o Mês:</p>
+      <input class="" type="date">
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-hover tabela">
+        <tr>
+
+          <th>Número</th>
+          <th>Foto</th>
+          <th>Aluno</th>
+          <th>Presença</th>
+
+        </tr>
+
+        <br>
+        <tr>
+          <th>01</th>
+          <th><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9_-g0f6AZxbd_lRtFoYMSBgu5KPuISdIGjtRjisBbOTBbCG3PHhkSEz4ZVsouriwxJg&usqp=CAU"
+              alt=""></th>
+          <th>Aluno 1</th>
+          <th><input type="checkbox" name="frequencia" id="frequencia"></th>
 
 
-    </tr>
-   
-<br>
-<tr>
-    <th>01</th>
-    <th>Aluno 1</th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
+
+        </tr>
+        <br>
+        <tr>
+          <th>02</th>
+          <th><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9_-g0f6AZxbd_lRtFoYMSBgu5KPuISdIGjtRjisBbOTBbCG3PHhkSEz4ZVsouriwxJg&usqp=CAU"
+              alt=""></th>
+          <th>Aluno 2</th>
+          <th><input type="checkbox" name="frequencia" id="frequencia"></th>
+
+        </tr>
+        <br>
+        <tr>
+          <th>03</th>
+          <th><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9_-g0f6AZxbd_lRtFoYMSBgu5KPuISdIGjtRjisBbOTBbCG3PHhkSEz4ZVsouriwxJg&usqp=CAU"
+              alt=""></th>
+          <th>Aluno 3</th>
+          <th><input type="checkbox" name="frequencia" id="frequencia"></th>
+
+        </tr>
+        <tr>
+          <th>04</th>
+          <th><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9_-g0f6AZxbd_lRtFoYMSBgu5KPuISdIGjtRjisBbOTBbCG3PHhkSEz4ZVsouriwxJg&usqp=CAU"
+              alt=""></th>
+          <th>Aluno 2</th>
+          <th><input type="checkbox" name="frequencia" id="frequencia"></th>
+
+        </tr>
+        <br>
+        <tr>
+          <th>05</th>
+          <th><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9_-g0f6AZxbd_lRtFoYMSBgu5KPuISdIGjtRjisBbOTBbCG3PHhkSEz4ZVsouriwxJg&usqp=CAU"
+              alt=""></th>
+          <th>Aluno 2</th>
+          <th><input type="checkbox" name="frequencia" id="frequencia"></th>
+
+        </tr>
+        <br>
+        <tr>
+          <th>06</th>
+          <th><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9_-g0f6AZxbd_lRtFoYMSBgu5KPuISdIGjtRjisBbOTBbCG3PHhkSEz4ZVsouriwxJg&usqp=CAU"
+              alt=""></th>
+          <th>Aluno 2</th>
+          <th><input type="checkbox" name="frequencia" id="frequencia"></th>
+
+        </tr>
+        <br>
+        <tr>
+          <th>07</th>
+          <th><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9_-g0f6AZxbd_lRtFoYMSBgu5KPuISdIGjtRjisBbOTBbCG3PHhkSEz4ZVsouriwxJg&usqp=CAU"
+              alt=""></th>
+          <th>Aluno 2</th>
+          <th><input type="checkbox" name="frequencia" id="frequencia"></th>
+
+        </tr>
+        <br>
+        <tr>
+          <th>08</th>
+          <th><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9_-g0f6AZxbd_lRtFoYMSBgu5KPuISdIGjtRjisBbOTBbCG3PHhkSEz4ZVsouriwxJg&usqp=CAU"
+              alt=""></th>
+          <th>Aluno 2</th>
+          <th><input type="checkbox" name="frequencia" id="frequencia"></th>
+
+        </tr>
+        <br>
+        <tr>
+          <th>09</th>
+          <th><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9_-g0f6AZxbd_lRtFoYMSBgu5KPuISdIGjtRjisBbOTBbCG3PHhkSEz4ZVsouriwxJg&usqp=CAU"
+              alt=""></th>
+          <th>Aluno 2</th>
+          <th><input type="checkbox" name="frequencia" id="frequencia"></th>
+
+        </tr>
+        <br>
+        <tr>
+          <th>10</th>
+          <th><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9_-g0f6AZxbd_lRtFoYMSBgu5KPuISdIGjtRjisBbOTBbCG3PHhkSEz4ZVsouriwxJg&usqp=CAU"
+              alt=""></th>
+          <th>Aluno 2</th>
+          <th><input type="checkbox" name="frequencia" id="frequencia"></th>
+
+        </tr>
+        <br>
 
 
-    </tr>
-    <br>
-<tr>
-    <th>02</th>
-    <th>Aluno 2</th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    </tr>
-    <br>
-<tr>
-    <th>03</th>
-    <th>Aluno 3</th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    <th><input type="checkbox" name="frequencia" id="frequencia"></th>
-    </tr>
-  
-    </table>
-    <br><br>
+      </table>
+      <br><br>
 
-    <input class="enviar" type="submit" name="acao" value="ENVIAR">
-    <input class="enviar" type="submit" name="acao" value="LIMPAR">
+      <input class="enviar" type="submit" name="acao" value="ENVIAR">
+      <input class="enviar" type="submit" name="acao" value="VOLTAR">
 
-<br><br>
-</div>
-</div>
+      <br><br>
+    </div>
+  </div>
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
