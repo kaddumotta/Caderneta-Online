@@ -39,7 +39,7 @@
   .fundo-nota {
     background-color: aliceblue;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 
@@ -124,6 +124,10 @@
 
   }
 
+  .acerto{
+    margin-top: -180px;
+  }
+
  
   
 </style>
@@ -165,14 +169,14 @@
       <p>Selecione o Mês:</p>
       <input class="" type="date">
     </div>
-<br><br><br>
+
     <div>
-      <label for="floatingTextarea">O que foi aprendido hoje?</label> <br>
-      <textarea rows="10" cols="70" placeholder="Digite as atividades do dia" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">O que foi aprendido hoje?</label><br>
+      <textarea rows="5" cols="60" placeholder="Digite as atividades do dia" id="floatingTextarea"></textarea>
       
     </div>
 
-    <div class="table-responsive">
+    <div class="table-responsive acerto">
       <table class="table table-hover tabela">
         <tr>
 
@@ -296,9 +300,6 @@
       <br><br>
     </div>
   </div>
-
-
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
